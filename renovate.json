@@ -1,0 +1,38 @@
+{
+    "extends": [
+        ":automergeDisabled",
+        ":autodetectPinVersions",
+        ":combinePatchMinorReleases",
+        ":separateMajorReleases",
+        ":separateMultipleMajorReleases",
+        ":ignoreModulesAndTests",
+        ":ignoreUnstable",
+        ":prImmediately",
+        ":prHourlyLimitNone",
+        ":prConcurrentLimit20",
+        ":updateNotScheduled",
+        "helpers:disableTypesNodeMajor"
+    ],
+    "packageRules": [
+        {
+            "groupName": "all dependencies",
+            "groupSlug": "all",
+            "packagePatterns": ["*"],
+            "schedule": ["every 3 months"]
+        },
+        {
+            "groupName": "internal dependencies",
+            "groupSlug": "internal",
+            "packagePatterns": [
+                "^@canonical",
+                "^canonicalwebteam",
+                "^vanilla-framework"
+            ],
+            "schedule": ["at any time"]
+        },
+        {
+            "depTypeList": ["devDependencies"],
+            "extends": [":automergeMinor"]
+        }
+    ]
+}

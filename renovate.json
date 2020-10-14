@@ -18,7 +18,7 @@
             "groupName": "all dependencies",
             "groupSlug": "all",
             "packagePatterns": ["*"],
-            "schedule": ["every 3 months"]
+            "schedule": ["every 3 months on the first day of the month"]
         },
         {
             "groupName": "internal dependencies",

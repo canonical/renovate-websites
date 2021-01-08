@@ -18,7 +18,7 @@
             "groupName": "all dependencies",
             "groupSlug": "all",
             "packagePatterns": ["*"],
-            "schedule": ["on the first day of the year"]
+            "schedule": ["on the first day of january"]
         },
         {
             "groupName": "internal dependencies",

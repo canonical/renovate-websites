@@ -1,6 +1,5 @@
 {
     "extends": [
-        ":automergeDisabled",
         ":autodetectPinVersions",
         ":combinePatchMinorReleases",
         ":separateMajorReleases",
@@ -33,6 +32,10 @@
         {
             "depTypeList": ["devDependencies"],
             "extends": [":automergeMinor"]
+        },
+        {
+            "matchUpdateTypes": ["patch", "pin", "digest"],
+            "automerge": true
         }
     ]
 }

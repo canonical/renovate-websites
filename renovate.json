@@ -34,5 +34,6 @@
             "depTypeList": ["devDependencies"],
             "extends": [":automergeMinor"]
         }
-    ]
+    ],
+  "dependencyDashboard": false
 }

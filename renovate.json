@@ -37,3 +37,8 @@
     ],
   "dependencyDashboard": false
 }
+{
+  "engines": {
+    "node": "^16.13.0"
+  }
+}
